@@ -1,0 +1,59 @@
+body {
+	font-family: Arial, sans-serif;
+	/* background-color: #000000; */
+	background-image: url("../Assets/0_HWrJ1V2nhCFHsf93.jpg");
+	padding: 0 20px;
+}
+h1 {
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid red;
+}
+#code_red {
+	color: red;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.video-item {
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+	cursor: pointer; /* Change cursor to pointer to indicate clickable */
+}
+.video-item:hover {
+	box-shadow: 0 10px 20px red;
+}
+.video-item iframe {
+	width: 100%;
+	height: 240px; /* Adjust height as needed */
+	border: none;
+}
+.video-item .video-info {
+	padding: 10px;
+}
+.video-item h3 {
+	font-size: 18px;
+	margin: 10px 0;
+	color: white;
+}
+.video-item p {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #555555;
+}
+.video-item a {
+	text-decoration: none; /* Remove underline decoration */
+	color: inherit; /* Inherit color from parent */
+	display: block; /* Ensure entire video-item is clickable */
+}

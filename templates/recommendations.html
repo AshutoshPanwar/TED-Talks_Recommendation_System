@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Recommended TED Talks</title>
+		<link
+			rel="stylesheet"
+			href="../static/stylesheets/recommendations.css"
+		/>
+	</head>
+	<body>
+		<h1>
+			<b id="code_red">TED Talk:</b>
+			Ideas change everything.
+		</h1>
+		<div class="grid">
+			{% for index, row in recommendations.iterrows() %}
+			<div class="video-item">
+				<a href="{{ row['link'] }}" target="_blank">
+					<iframe
+						src="https://embed.ted.com/talks/lang/en/{{ get_ted_id(row['link']) }}"
+						frameborder="0"
+						scrolling="no"
+						allowfullscreen
+					>
+					</iframe>
+					<div class="video-info">
+						<h3>{{ row['title'] }}</h3>
+						<p>Author: {{ row['author'] }}</p>
+						<p>Date: {{ row['date'] }}</p>
+						<p>Views: {{ row['views'] }}</p>
+						<!-- <p>Likes: {{ row['likes'] }}</p> -->
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

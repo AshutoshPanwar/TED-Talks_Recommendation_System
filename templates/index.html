@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TED Talks Recommendation System</title>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<link rel="stylesheet" href="../static/stylesheets/style.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<img src="../static/Assets/pngegg (2).png" alt="Logo" />
+		</nav>
+		<div class="container">
+			<div class="left-side">
+				<div class="short-corner">
+					<h6>Personal Project</h6>
+					<h3>Rethinking TedTalks</h3>
+				</div>
+				<h1><b>Search ___ What ___ Matters</b></h1>
+			</div>
+			<div class="right-side">
+				<h1>
+					<div id="bold_red">TED Talks:</div>
+					Discover ideas worth spreading.
+				</h1>
+				<div class="form-container">
+					<form action="/recommend" method="post">
+						<label for="talk_content" class="label"></label>
+						<input
+							type="text"
+							id="talk_content"
+							name="talk_content"
+							class="input"
+							placeholder="Technology, Education, Motivation"
+						/>
+						<input
+							type="submit"
+							value="Recommend Talks."
+							class="submit"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img
+				src="../static/Assets/88ad2c71596935.5bca7cb298bd7.png"
+				alt=""
+			/>
+		</div>
+		<!-- <div class="image-container">
+			<img
+				src="../static/Assets/5956d971596935.5bca7dfd086d5.png"
+				alt=""
+			/>
+		</div> -->
+		<div class="content_about_project">
+			<p>
+				My TED Talk recommendation system is designed to help users
+				discover inspiring and educational content tailored to their
+				interests. By simply entering keywords related to topics such as
+				technology, education, or motivation, the system provides
+				personalized TED Talk suggestions. This tool is particularly
+				useful for those seeking to expand their knowledge, find
+				motivation, or explore new ideas. Whether you're a student,
+				professional, or lifelong learner, the TED Talk recommendation
+				system ensures you connect with the most relevant and impactful
+				talks, making it easier to engage with thought-provoking content
+				and stay informed on various subjects.
+			</p>
+		</div>
+		<!-- <div class="image-container">
+			<img
+				src="../static/Assets/6433fa71596935.5bca8356eb136.png"
+				alt=""
+			/>
+		</div> -->
+		<div class="quote-cards">
+			<div class="quote-card">
+				<p>"HOW NOT TO GET LOST IN TECHNOLOGY ERA."</p>
+			</div>
+			<div class="quote-card" id="next-image">
+				<p>"THINK DEEPER, DREAM BIGGER, AND ACHIEVE GREATER."</p>
+			</div>
+		</div>
+		<div class="block">
+			<div class="left">
+				<img src="../static/Assets/DSC_4385.JPG" alt="" />
+			</div>
+			<div class="right">
+				<h1>Let's Connect ___</h1>
+				<!-- <p>
+					Let's Connect!, I am active on Most Networking platforms.You
+					can Follow or message me for help I will reply within 24
+					hours.
+				</p> -->
+				<div class="social">
+					<a
+						href="https://www.linkedin.com/in/ashutosh-panwar1100/"
+						id="linkedin"
+						target="_blank"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+					<a
+						href="https://github.com/AshutoshPanwar"
+						id="github"
+						target="_blank"
+						><i class="fab fa-github"></i
+					></a>
+					<a
+						href="https://twitter.com/Ashu_Panwar1100"
+						id="twitter"
+						target="_blank"
+						><i class="fab fa-twitter"></i
+					></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../static/js/script.js"></script>
+</html>
