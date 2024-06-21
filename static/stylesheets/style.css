@@ -343,7 +343,7 @@ body {
 	color: black;
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
 	.block {
 		display: flex;
 		flex-direction: column;
