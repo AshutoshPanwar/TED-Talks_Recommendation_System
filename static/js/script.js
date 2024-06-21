@@ -2,9 +2,10 @@ const inputField = document.getElementById("talk_content");
 
 // Define an array of different placeholder texts
 const placeholderTextOptions = [
-	"Technology, Education, Motivation",
-	"Enter a topic you're interested in",
-	"e.g., Climate Change, Artificial Intelligence, Art History",
+	"Eg: Time Management and working hard to become successful in life.",
+	"Eg: Climate change and impact on the health.",
+	"Eg: Technology, Education, Motivation",
+	"Eg: Climate Change, Artificial Intelligence, Art History",
 ];
 
 let currentOptionIndex = 0; // Track current placeholder index

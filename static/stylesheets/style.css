@@ -139,6 +139,7 @@ body {
 	background-color: #ff0000;
 	color: #fff;
 	padding: 10px 80px;
+	font-size: larger;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -167,20 +168,21 @@ body {
 	}
 
 	.right-side {
-		/* order: -1; 
-		background-color: rgba(0, 0, 0, 0.6); /* Keep background color */
+		background-color: rgba(0, 0, 0, 0.909);
 		padding: 20px;
 	}
 
 	.right-side h1 {
-		font-size: 5rex; /* Adjust font size for responsiveness */
+		font-size: 7rex; /* Adjust font size for responsiveness */
 	}
 	.left-side h1 {
-		font-size: 5rex;
+		font-size: 16vw;
+		text-align: left;
 	}
 
 	.submit {
-		padding: 10px 50px; /* Adjust button padding for responsiveness */
+		padding: 10px 25px; /* Adjust button padding for responsiveness */
+		font-size: medium;
 	}
 	.navbar {
 		padding-left: 20px;
@@ -226,7 +228,7 @@ body {
 	background-position: top; /* Center the background image */
 	border: 1px solid red;
 	border-radius: 10px;
-	padding: 100px 20px;
+	padding: 20px;
 	width: 45%;
 	margin: 10px;
 	box-shadow: 0 4px 8px red;
@@ -262,7 +264,7 @@ body {
 .block {
 	display: flex;
 	padding: 5% 5% 5% 5%;
-	background-color: rgba(255, 0, 0, 0.855);
+	background-color: rgba(228, 5, 5, 0.855);
 }
 
 .block .left {
@@ -274,7 +276,7 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 20px solid white;
+	border: 10px solid white;
 
 	border-radius: 50%;
 }
@@ -325,11 +327,11 @@ body {
 
 .social i {
 	/* color: #000; */
-	font-size: 40px;
+	font-size: 5vw;
 	padding: 3%;
 }
 .social i:hover {
-	color: #661818;
+	color: #ffffff;
 }
 #linkedin {
 	color: black;
@@ -384,5 +386,9 @@ body {
 
 	#rev {
 		flex-direction: column-reverse;
+	}
+
+	.social i {
+		font-size: 10vw;
 	}
 }
