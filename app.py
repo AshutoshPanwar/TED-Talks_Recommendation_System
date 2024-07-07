@@ -85,7 +85,7 @@ def recommend_talks(talk_content, data, tfidf_matrix):
     # Sort by similarities
     recommended_talks = data.sort_values(by='cosine_similarity', ascending=False)
 
-    return recommended_talks[['title', 'author', 'date', 'views', 'likes', 'link']].head(20)
+    return recommended_talks[['title', 'author', 'date', 'views', 'likes', 'link']].head(30)
 
 # Route for the home page
 @app.route('/')
