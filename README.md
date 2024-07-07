@@ -1,16 +1,14 @@
-![](./static/Assets/Home_preview.png)
-
 <h1 align="center"> 🚨TED Talk Recommendation System🚨 </h1>
+
+![](./static/Assets/Home_preview.png)
 
 This project is a web-based recommendation system for TED Talks. It uses a content-based recommendation approach leveraging TF-IDF vectorization and cosine similarity to suggest similar TED Talks based on user-provided input.
 
-## The Problem and the Solution
-
-### The Problem
+## The Problem
 
 With thousands of TED Talks available, users often find it challenging to discover new talks that align with their interests based on the content of talks they have already enjoyed. Traditional recommendation systems may not effectively capture the content nuances necessary for accurate suggestions.
 
-### The Solution
+## The Solution
 
 This project addresses the problem by implementing a content-based recommendation system. By analyzing the textual content of TED Talk titles, the system suggests similar talks using TF-IDF vectorization and cosine similarity. This method ensures that recommendations are based on the actual content, providing more relevant and personalized suggestions.
 
