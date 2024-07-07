@@ -106,7 +106,7 @@ Example of result output:
 
 ## If you like my work, You can follow me on
 
-LinkedIn: https://www.linkedin.com/in/ashutoshpanwar1100/
-GitHub: https://github.com/AshutoshPanwar
-Twitter: https://x.com/Ashu_Panwar1100
-Made with ❤️ by Ashutosh Panwar
+-   **LinkedIn:** https://www.linkedin.com/in/ashutoshpanwar1100/
+-   **GitHub:** https://github.com/AshutoshPanwar
+-   **Twitter:** https://x.com/Ashu_Panwar1100
+    Made with ❤️ by Ashutosh Panwar
