@@ -109,4 +109,4 @@ Example of result output:
 -   **LinkedIn:** https://www.linkedin.com/in/ashutoshpanwar1100/
 -   **GitHub:** https://github.com/AshutoshPanwar
 -   **Twitter:** https://x.com/Ashu_Panwar1100
-    Made with ❤️ by Ashutosh Panwar
+-   Made with ❤️ by Ashutosh Panwar
