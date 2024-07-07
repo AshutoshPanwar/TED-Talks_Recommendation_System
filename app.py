@@ -50,24 +50,40 @@ def get_ted_id(url):
         return None
 
 # Function to get similarities
+# def get_similarities(talk_content, tfidf_matrix):
+#     talk_tfidf = vectorizer.transform([talk_content])
+#     cosine_similarities = cosine_similarity(talk_tfidf, tfidf_matrix)
+#     pearson_correlations = [pearsonr(talk_tfidf.toarray().flatten(), tfidf_vector.toarray().flatten())[0]
+#                             for tfidf_vector in tfidf_matrix]
+
+#     return cosine_similarities[0], pearson_correlations
+
 def get_similarities(talk_content, tfidf_matrix):
     talk_tfidf = vectorizer.transform([talk_content])
-    cosine_similarities = cosine_similarity(talk_tfidf, tfidf_matrix)
-    pearson_correlations = [pearsonr(talk_tfidf.toarray().flatten(), tfidf_vector.toarray().flatten())[0]
-                            for tfidf_vector in tfidf_matrix]
-
-    return cosine_similarities[0], pearson_correlations
+    cosine_similarities = cosine_similarity(talk_tfidf, tfidf_matrix)[0]
+    return cosine_similarities
 
 # Function to recommend talks
+# def recommend_talks(talk_content, data, tfidf_matrix):
+#     cosine_similarities, pearson_correlations = get_similarities(talk_content, tfidf_matrix)
+
+#     # Combine similarities with original data
+#     data['cosine_similarity'] = cosine_similarities
+#     data['pearson_correlation'] = pearson_correlations
+
+#     # Sort by similarities
+#     recommended_talks = data.sort_values(by=['cosine_similarity', 'pearson_correlation'], ascending=[False, False])
+
+#     return recommended_talks[['title', 'author', 'date', 'views', 'likes', 'link']].head(20)
+
 def recommend_talks(talk_content, data, tfidf_matrix):
-    cosine_similarities, pearson_correlations = get_similarities(talk_content, tfidf_matrix)
+    cosine_similarities = get_similarities(talk_content, tfidf_matrix)
 
     # Combine similarities with original data
     data['cosine_similarity'] = cosine_similarities
-    data['pearson_correlation'] = pearson_correlations
 
     # Sort by similarities
-    recommended_talks = data.sort_values(by=['cosine_similarity', 'pearson_correlation'], ascending=[False, False])
+    recommended_talks = data.sort_values(by='cosine_similarity', ascending=False)
 
     return recommended_talks[['title', 'author', 'date', 'views', 'likes', 'link']].head(20)
 
